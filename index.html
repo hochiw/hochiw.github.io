@@ -6,20 +6,38 @@
     <title>Tako's Room</title>
     <link rel="stylesheet" href="website/meta.css">
     <link rel="stylesheet" href="website/index.css">
+    <link rel="stylesheet" href="website/loadingbars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(window).on('load', function(){
+   $('#loadingBG').fadeOut();
+});</script>
 </head>
 <body>
+  <div id="loadingBG">
+    <div class="loading bar">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+    </div>
+  </div>
   <video autoplay muted loop id="background">
-    <source src="website/resources/space.mp4" type="video/mp4">
+    <source src="website/resources/videos/space.mp4" type="video/mp4">
   </video>
 <div class="grid">
     <div class="header">
         <div class="img-container">
           <a href="/">
-            <img src="website/resources/TakoKissing.png">
+            <img src="website/resources/images/TakoKissing.png">
           </a>
         </div>
         <div class="title-container">
-            <img src="website/resources/Takochan.png">
+            <img src="website/resources/images/Takochan.png">
         </div>
         <div class="info">
           <div class="controllers">

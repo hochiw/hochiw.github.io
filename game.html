@@ -6,20 +6,38 @@
     <title>Tako's Room</title>
     <link rel="stylesheet" href="website/meta.css">
     <link rel="stylesheet" href="website/game.css">
+    <link rel="stylesheet" href="website/loadingbars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(window).on('load', function(){
+   $('#loadingBG').fadeOut();
+});</script>
 </head>
 <body>
+  <div id="loadingBG">
+    <div class="loading bar">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+    </div>
+  </div>
   <video autoplay muted loop id="background">
-    <source src="website/resources/space.mp4" type="video/mp4">
+    <source src="website/resources/videos/space.mp4" type="video/mp4">
   </video>
 <div class="grid">
     <div class="header">
         <div class="img-container">
           <a href="/">
-            <img src="website/resources/TakoKissing.png">
+            <img src="website/resources/images/TakoKissing.png">
           </a>
         </div>
         <div class="title-container">
-            <img src="website/resources/Takochan.png">
+            <img src="website/resources/images/Takochan.png">
         </div>
         <div class="info">
           <div class="controllers">
@@ -35,7 +53,7 @@
     <div class = "content">
         <div class="game_block">
             <a class="img link" href="KantanGongonMan">
-                <img class=img src="website/resources/ktGonGon.png">
+                <img class=img src="website/resources/images/ktGonGon.png">
                 <div class="overlayB">
                     <p class="name">Simple Gongon Man
                 </div>
@@ -43,7 +61,7 @@
         </div>
         <div class="game_block" id="mito_game">
             <a class="img link" href="Kakusanakya">
-                <img class=img src="website/resources/tknmt.png">
+                <img class=img src="website/resources/images/tknmt.png">
                 <div class="overlayB">
                     <p class="name">私で隠さなきゃ
                 </div>
@@ -51,7 +69,7 @@
         </div>
         <div class="game_block">
             <a class="img link" href="Nandemonagereru">
-                <img class=img src="website/resources/nandemo.png">
+                <img class=img src="website/resources/images/nandemo.png">
                 <div class="overlayB">
                     <p class="name">Non-stop throwing emoji
                 </div>
