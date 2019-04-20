@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>たこのお部屋</title>
+    <title>Tako's Room</title>
     <link rel="stylesheet" href="website/meta.css">
+    <link rel="stylesheet" href="website/index.css">
 </head>
 <body>
+  <video autoplay muted loop id="background">
+    <source src="website/resources/space.mp4" type="video/mp4">
+  </video>
 <div class="grid">
     <div class="header">
         <div class="img-container">
+          <a href="index.html">
             <img src="website/resources/TakoKissing.png">
+          </a>
         </div>
         <div class="title-container">
-            <img src="website/resources/title.png">
+            <img src="website/resources/TakoChan.png">
         </div>
         <div class="info">
-            <a id="controller" class="img link" href="">
-                ゲーム
+          <div class="controllers">
+          <a class="controller" class="img link" href="index.html">
+              Home
+          </a>
+            <a class="controller" class="img link" href="game.html">
+                Games
             </a>
+          </div>
         </div>
     </div>
     <div class = "content">
-        <div class="game_block">
-            <a class="img link" href="KantanGongonMan">
-                <img class=img src="website/resources/ktGonGon.png">
-                <div class="overlayB">
-                    <p class="name">かんたんゴンゴンマン
-                </div>
-            </a>
-        </div>
-        <div class="game_block">
-            <a class="img link" href="Kakusanakya">
-                <img class=img src="website/resources/tknmt.png">
-                <div class="overlayB">
-                    <p class="name">私で隠さなきゃ
-                </div>
-            </a>
-        </div>
-        <div class="game_block">
-            <a class="img link" href="Nandemonagereru">
-                <img class=img src="website/resources/nandemo.png">
-                <div class="overlayB">
-                    <p class="name">なんでもなげれるかおもじ
-                </div>
-            </a>
-        </div>
-    </div>
+      <section class="textContainer">
+          <div class="textBox">
+            <c> Rico</c>
+            <h3>Unimelb | Majoring in Software Engineering </h3>
+              <ul class="nav">
+                  <li>
+                    <a href="https://www.facebook.com/rico5504">Facebook</a>
+                  </li>
+                  <li>|</li>
+                  <li>
+                    <a href="mailto:me@hochiw.com">Email</a>
+                  </li>
+                  <li>|</li>
+                  <li>
+                    <a href="https://github.com/rico5504">Github</a>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      <div class="footnote">
+         <div>Video from <a href="https://www.youtube.com/watch?v=u9TuAZHeziw"> Youtube</a> </div>
+      </div>
 </div>
+
 
 
 </body>
