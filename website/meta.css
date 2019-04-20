@@ -36,7 +36,6 @@ a,a:hover,a:visited,a:link,a:active {
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
-    padding:;
 }
 
 
@@ -97,8 +96,10 @@ a,a:hover,a:visited,a:link,a:active {
     top: 0;
     height: 100%;
     width: 100%;
-    position: relative;
+    position: fixed;
 }
+
+
 
 .controllers {grid-column: 8;box-sizing: border-box;display:grid;grid-template-rows: 1fr;grid-column-gap: 10px;grid-template-columns: repeat(2,1fr);height: 100%;}
 
