@@ -25,6 +25,7 @@ c {
   color: white;
   text-align: center;
   padding: 40px;
+  border: 1px solid rgba(0,0,0,0);
 }
 
 ul {
