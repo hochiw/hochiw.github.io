@@ -40,6 +40,7 @@ a,a:hover,a:visited,a:link,a:active {
 
 
 .info {
+   animation: 1s ease-out 0s 1 slideFromTop;
     background: black;
     position: relative;
     z-index: 11;
@@ -53,42 +54,6 @@ a,a:hover,a:visited,a:link,a:active {
     grid-template-columns: repeat(8,1fr);
     border: 1px solid rgba(80, 76, 76, 0.32);
     padding: 20px;
-}
-
-.img-container {
-    animation: 1s ease-out 0s 1 Appear;
-    left: 5px;
-    top:70px;
-    position:absolute;
-    transition:bottom .3s;
-    z-index:3;
-    max-width:890px;
-    max-height: 100px;
-    margin:0 auto;
-    object-fit: fit;
-    top: 5;
-}
-
-.title-container {
-    animation: 1s ease-out 0s 1 Appear;
-    top:70px;
-    right: 0;
-    position:absolute;
-    transition:bottom .3s;
-    z-index:3;
-    max-width:890px;
-    margin:0 auto;
-}
-
-.title-container img {
-    max-width: 150px;
-    max-height: 35vh;
-}
-
-.header .img-container img {
-    max-width: 145px;
-    max-height: 35vh;
-    transform: rotate(-10deg);
 }
 
 .header {
@@ -127,13 +92,4 @@ a,a:hover,a:visited,a:link,a:active {
   text-align: right;
   padding: 10px;
   font-size: 10px;
-}
-
-@keyframes Appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
