@@ -48,19 +48,19 @@ a,a:hover,a:visited,a:link,a:active {
 
 .info {
    animation: 1s ease-out 0s 1 slideFromTop;
-    background: black;
-    position: relative;
-    z-index: 11;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    color:white;
-    box-sizing: border-box;
-    display:grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(8,1fr);
-    border: 1px solid rgba(80, 76, 76, 0.32);
-    padding: 20px;
+   background: black;
+   position: relative;
+   z-index: 1000;
+   top: 0;
+   width: 100%;
+   height: 10vh;
+   color:white;
+   box-sizing: border-box;
+   display:grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(8,1fr);
+   border: 1px solid rgba(80, 76, 76, 0.32);
+   padding: 20px;
 }
 
 .header {
@@ -69,6 +69,7 @@ a,a:hover,a:visited,a:link,a:active {
     height: 100%;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 .controllers {
@@ -105,4 +106,5 @@ a,a:hover,a:visited,a:link,a:active {
   text-align: right;
   padding: 10px;
   font-size: 10px;
+  z-index: 0;
 }

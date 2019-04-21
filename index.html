@@ -6,18 +6,16 @@
     <title>Rico's Room</title>
     <link rel="icon" type="image/png" href="website/resources/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="website/resources/images/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="website/meta.css">
-    <link rel="stylesheet" href="website/index.css">
-    <link rel="stylesheet" href="website/loadingbars.css">
-    <link rel="stylesheet" href="website/animations.css">
+    <link rel="stylesheet" href="website/css/meta.css">
+    <link rel="stylesheet" href="website/css/index.css">
+    <link rel="stylesheet" href="website/css/projects.css">
+    <link rel="stylesheet" href="website/css/loadingbars.css">
+    <link rel="stylesheet" href="website/css/animations.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script>
-    $(window).on('load', function(){
-   $('#loadingBG').fadeOut();
-   $("body").removeClass("preload");
-});</script>
+    <script src="website/resources/scripts/onLoad.js"></script>
+  <script src="website/resources/scripts/smoothScroll.js"></script>
 </head>
-<body class="preload">
+<body class="preload" id="body">
   <div id="loadingBG">
     <div class="loading bar">
          <div></div>
@@ -37,16 +35,16 @@
     <div class="header">
         <div class="info">
           <div class="controllers">
-          <a class="controller" class="img link" href="/">
+          <a class="controller" class="img link" id="index_btn" href="#body">
               Home
           </a>
-            <a class="controller" class="img link" href="projects.html">
+            <a class="controller" class="img link" id="project_btn" href="#content_project">
                 Projects
             </a>
           </div>
         </div>
     </div>
-    <div class = "content">
+    <div id = "content_info">
       <section class="textContainer">
           <div class="textBox">
             <c> Rico</c>
@@ -69,6 +67,28 @@
       <div class="footnote">
          <div>Video from <a href="https://www.youtube.com/watch?v=u9TuAZHeziw"> Youtube</a> </div>
       </div>
+</div>
+<div id = "content_project">
+  <div class="title">
+      <h1>Projects</h1>
+  </div>
+    <div class="game_block">
+        <a class="img link" href="KantanGongonMan">
+            <img class=img src="website/resources/images/ktGonGon.png">
+            <div class="overlayB">
+                <p class="name">Simple Gongon Man
+            </div>
+        </a>
+    </div>
+    <div class="game_block">
+        <a class="img link" href="Nandemonagereru">
+            <img class=img src="website/resources/images/nandemo.png">
+            <div class="overlayB">
+                <p class="name">Non-stop throwing emoji
+            </div>
+        </a>
+    </div>
+</div>
 </div>
 
 
