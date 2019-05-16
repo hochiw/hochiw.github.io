@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rico's Room</title>
-    <link rel="icon" type="image/png" href="website/resources/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="website/resources/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="website/resources/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="website/resources/images/icons/favicon-16x16.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="website/css/meta.css">
     <link rel="stylesheet" href="website/css/index.css">
-    <link rel="stylesheet" href="website/css/projects.css">
+    <link rel="stylesheet" href="website/css/educations.css">
     <link rel="stylesheet" href="website/css/loadingbars.css">
-    <link rel="stylesheet" href="website/css/animations.css">
+    <link rel="stylesheet" href="website/css/about.css">
+    <link rel="stylesheet" href="website/css/skills.css">
+    <link rel="stylesheet" href="website/css/projects.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="website/resources/scripts/onLoad.js"></script>
     <script src="website/resources/scripts/smoothScroll.js"></script>
-    <script src="website/resources/scripts/nr.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body class="preload" id="body">
   <div id="loadingBG">
@@ -29,9 +34,6 @@
          <div></div>
     </div>
   </div>
-  <video autoplay muted loop id="background">
-    <source src="website/resources/videos/space.mp4" type="video/mp4">
-  </video>
 <div class="grid">
     <div class="header">
         <div class="info">
@@ -39,56 +41,230 @@
           <a class="controller" class="img link" id="index_btn" href="#body">
               Home
           </a>
-            <a class="controller" class="img link" id="project_btn" href="#content_project">
+            <a class="controller" class="img link" id="project_btn" href="#content_about">
+                About
+            </a>
+            <a class="controller" class="img link" id="project_btn" href="#content_skills">
+                Skills
+            </a>
+            <a class="controller" class="img link" id="project_btn" href="#content_educations">
+                Education
+            </a>
+            <a class="controller" class="img link" id="project_btn" href="#content_projects">
                 Projects
             </a>
+
           </div>
         </div>
     </div>
     <div id = "content_info">
       <section class="textContainer">
           <div class="textBox">
-            <c> Rico</c>
-            <h3>Unimelb | Software Engineering Major </h3>
-              <ul class="nav">
-                  <li>
-                    <a href="https://www.facebook.com/rico5504">Facebook</a>
-                  </li>
-                  <li>|</li>
-                  <li>
-                    <a href="mailto:me@hochiw.com">Email</a>
-                  </li>
-                  <li>|</li>
-                  <li>
-                    <a href="https://github.com/rico5504">Github</a>
-                  </li>
-              </ul>
+            <c> Hey, This is Rico.</c>
+            <h3>I am a software/web developer from Hong Kong,</h3>
+            <h3>Graduating from Univerity of Melbourne in July 2019.</h3>
           </div>
       </section>
-      <div class="footnote">
-         <div>Video from <a href="https://www.youtube.com/watch?v=u9TuAZHeziw"> Youtube</a> </div>
-      </div>
 </div>
-<div id = "content_project">
-  <div class="title">
-      <h1>Projects</h1>
+<section id = "content_about">
+  <div data-aos="fade-down" class="title about_t">
+      <c>About me</c>
+      <div class="line"></div>
   </div>
-    <div class="game_block">
+  <div data-aos="fade-right" class="about_info">
+    <h2>What do I do?</h2>
+    <p>As a software development student, I've worked
+      on various projects in different aspects.</br></p>
+    <p>Full-stack web development, GPS-based Android Application,
+      Chatbot, Gaming AI and even Games.</br></br></br></p>
+    <video data-aos="fade-up" autoplay loop muted>
+      <source src="website/resources/videos/game.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="line hidden"></div>
+  <div data-aos="fade-up" class="straight-line"></div>
+  <div data-aos="fade-up" class="about_info">
+    <h2>Personal Interests</h2>
+    <ul>
+    <li>Everything about <strong>Japan</strong></br></li>
+    <li><strong>Guitar</strong>, have been playing for almost 9 years.</br></li>
+    <li><strong>Gaming</strong>, especially mobile games.</br></li>
+    <li>Acquiring new <strong>skills</strong> by downloading
+    softwares and learning how to use them.</br></br>
+    </ul>
+    <video data-aos="fade-up" autoplay loop muted width="250" height="150">
+      <source src="website/resources/videos/tako.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="line hidden"></div>
+  <div data-aos="fade-up" class="straight-line"></div>
+  <div data-aos="fade-left" class="about_info">
+    <h2>Anything else?</h2>
+    <p>Well... One more thing about me is that I have absolutely no working experience
+      at the moment.</br></p>
+    <p> I am actively looking for a full-time job or an internship as well.</br></p>
+    <p> So... If you are interested or just simply want to have a chat, feel
+      free to contact me through the links below!</p>
+    <div data-aos="fade-up" class="link-btns">
+      <a href="https://www.linkedin.com/in/ho-chi-wong-958422185/">
+        <img width="32" height= "32" src="website/resources/images/icons/linkedin.png">
+      </a>
+      <a href="https://www.facebook.com/rico5504">
+        <img width="32" height= "32" src="website/resources/images/icons/facebook.png">
+      </a>
+      <a href="https://github.com/rico5504">
+        <img width="32" height= "32" src="website/resources/images/icons/github.png">
+      </a>
+      <a href="mailto:me@hochiw.com">
+        <img width="32" height= "32" src="website/resources/images/icons/email.png">
+      </a>
+    </div>
+
+
+  </div>
+</section>
+<section id = "content_skills">
+  <div data-aos="flip-down" class="title skills-t">
+      <c>Skills</c>
+      <div class="line skills_l"></div>
+  </div>
+  <div data-aos="zoom-in" id="skill-des">
+    <p>Here are some of the skills I've learnt throughout my academic journey,
+      listed based on proficiency levels.</p>
+    </div>
+  <div id="des-container">
+    <div data-aos="flip-down" class="skills description">
+      <h2>Coding Languages</h2>
+      <div class="line hidden"></div>
+      <ul>
+      <li><strong>Python</strong></li>
+      <li><strong>Java</strong></li>
+      <li><strong>HTML</strong></li>
+      <li><strong>CSS</strong></li>
+      <li><strong>C</strong></li>
+      <li><strong>JavaScript</strong></li>
+      <li><strong>C#</strong></li>
+      </ul>
+    </div>
+    <div data-aos="flip-down" class="skills description">
+      <h2>Softwares/Applications</h2>
+      <div class="line hidden"></div>
+      <ul>
+      <li><strong>OSX</strong></li>
+      <li><strong>Windows</strong></li>
+      <li><strong>Git</strong></li>
+      <li><strong>Atom</strong></li>
+      <li><strong>Unity Engine</strong></li>
+      <li><strong>Android Studio</strong></li>
+      <li><strong>Blender</strong></li>
+      </ul>
+    </div>
+
+    <div data-aos="flip-down" class="skills description">
+      <h2>Frameworks</h2>
+      <div class="line hidden"></div>
+      <ul>
+      <li><strong>NodeJS</strong></li>
+      <li><strong>Jade</strong></li>
+      <li><strong>Socket.IO</strong></li>
+      <li><strong>jQuery</strong></li>
+      <li><strong>Mongoose/MongoDB</strong></li>
+      </ul>
+    </div>
+    <div data-aos="flip-down" class="skills description">
+      <h2>Languages</h2>
+      <div class="line hidden"></div>
+      <ul>
+      <li><strong>Cantonese</strong> - Native</li>
+      <li><strong>English</strong> - Fluent</li>
+      <li><strong>Japanese</strong> - Advanced</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id = "content_educations">
+  <div data-aos="fade-down" class="edu-t title">
+      <c>Education</c>
+      <div class="line edu_l"></div>
+  </div>
+  <div id="edu-des">
+    <h1 data-aos="fade-right" >University of Melbourne</h1>
+    <p data-aos="fade-left"><strong>Bachelor of Science | Computing and Software Systems Major</strong></p>
+    <p data-aos="fade-right">Graduating in July 2019</p>
+  </div>
+  <div data-aos="fade-up" class="subject-des">
+    <h1>Cores</h1>
+    <div class="line"></div>
+    <ul>
+    <li>Software Modelling and Design</li>
+    <li>IT Project</li>
+    <li>Computer Systems</li>
+    <li>Models of Computation</li>
+    </ul>
+  </div>
+  <div data-aos="fade-up" class="subject-des">
+    <h1>Electives</h1>
+    <div class="line"></div>
+    <ul>
+      <li>Foundations of Computing</li>
+      <li>Foundations of Algorithms</li>
+      <li>Algorithms and Data Structures</li>
+      <li>Elements of Data Processing</li>
+      <li>Graphics and Interaction</li>
+      <li>Database Systems</li>
+      <li>Web Information Technologies</li>
+      <li>Object Oriented Software Development</li>
+      <li>Artifical Intelligence</li>
+    </ul>
+  </div>
+  <div data-aos="fade-up" class="subject-des">
+    <h1>Breadths</h1>
+    <div class="line"></div>
+    <ul>
+      <li>Japanese 6</li>
+      <li>Japanese 7</li>
+      <li>Japanese 8</li>
+      <li>Japanese Through the Media</li>
+      <li>Japanese Through Translation</li>
+    </ul>
+  </div>
+</section>
+
+<section id = "content_projects">
+  <div data-aos="flip-down" class="title proj_t">
+      <c>Projects</c>
+      <div class="line proj_l"></div>
+  </div>
+  <div class="projects">
+    <div data-aos="zoom-in" class="game_block">
         <a class="img link" href="KantanGongonMan">
-            <img class=img src="website/resources/images/ktGonGon.png">
-            <div class="overlayB">Simple Gongon Man</div>
+          <img src="website/resources/images/ktGonGon.png">
         </a>
     </div>
-    <div class="game_block">
+    <div data-aos="zoom-in" class="game_block">
         <a class="img link" href="Nandemonagereru">
-            <img class=img src="website/resources/images/nandemo.png">
-            <div class="overlayB">Non-stop throwing emoji</div>
+          <img src="website/resources/images/nandemo.png">
         </a>
     </div>
-</div>
-</div>
-
-
-
+    <div data-aos="zoom-in" class="game_block">
+        <a class="img link" href="https://github.com/rico5504/Genetic-Neural-Network-Demo">
+            <img class=img src="website/resources/images/genetic.png">
+        </a>
+    </div>
+    <div data-aos="zoom-in" class="game_block">
+        <a class="img link" href="https://github.com/rico5504/FGO-Gacha-Simulator">
+            <img class=img src="website/resources/images/gacha.jpg">
+        </a>
+    </div>
+  </div>
+</section>
 </body>
+<script>
+  AOS.init();
+
+  $("body,html").animate({
+scrollTop: 1
+}, 0);
+</script>
 </html>
